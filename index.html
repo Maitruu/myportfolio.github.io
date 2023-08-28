@@ -19,7 +19,26 @@
   </head>
   <body>
     <header id="myHeader">
-      <nav id="navbar">
+      <nav class="navbar">
+        <div class="first" style="color: white">MAT's PORTFOLIO</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#p">Academics</a></li>
+          <li><a href="#q">Achievements</a></li>
+          <li><a href="#r">Skill-Set</a></li>
+          <li><a href="#s">Contact Me</a></li>
+        </ul>
+        <img id="logo"
+                src="https://as1.ftcdn.net/v2/jpg/03/39/05/24/1000_F_339052470_P0TvjTZWKKdPWVFcSgO4nOrH4FcMWHRl.jpg"
+                alt=""
+              />
+      </nav>
+      <!-- <nav id="navbar">
+
         <div class="first" style="color: white">MAT's PORTFOLIO</div>
         <div class="hamburger" id="hamburger">
           <span class="line"></span>
@@ -38,7 +57,7 @@
                 src="https://as1.ftcdn.net/v2/jpg/03/39/05/24/1000_F_339052470_P0TvjTZWKKdPWVFcSgO4nOrH4FcMWHRl.jpg"
                 alt=""
               />
-      </nav>
+      </nav> -->
     </header>
     <main>
       <section class="firstsection">
@@ -95,7 +114,7 @@
         </div>
       </div>
       <hr />
-      <div id="sarosh">
+      <div id="sarosh" class="sarosh">
         <div id="school3">
           <h1>Secondary Education</h1>
           <p>
@@ -116,7 +135,7 @@
         </div>
       </div>
       <hr />
-      <div id="vnit">
+      <div id="vnit" class="vnit">
         <div class="school">
           <img
             id="z"
@@ -254,13 +273,11 @@
       </div>
     </footer>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
+     const hamburgerMenu = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
 
-  hamburger.addEventListener('click', function() {
-    menu.classList.toggle("open");
-});
+hamburgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
     </script>
   </body>

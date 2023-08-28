@@ -26,19 +26,42 @@ body {
     transition: top 0.5s;
     width: 100% !important; */
 }
-.hamburger {
-  display: none;
-  cursor: pointer;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #000814;
+  color: white;
 }
 
-.line {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: #fff;
-  margin-bottom: 5px;
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
-nav {
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color:bisque;
+}
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +78,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-}
+} */
 .first {
   font-size: 2rem;
 }
@@ -142,35 +165,30 @@ img:hover {
 }
 .school1 h1,
 #school3 h1 {
-  margin: 2rem;
+  margin: 1.25rem;
   font-size: xx-large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .school1 p,
 #school3 p {
-  margin: 10%;
+  margin: 1.25rem;
   font-size: 100%;
   font-family: cursive;
   width: 80%;
   height: auto;
 }
 #school3 {
-  margin: 2rem 3rem 2rem 3rem;
+  margin: 2rem 2rem 2rem 2rem;
   width: 24rem;
   background-color: #3f3d3d;
   border-radius: 5%;
   color: white;
 }
 #school2 {
-  margin: 2rem 10rem 2rem 2rem;
+  margin: 2rem 0rem 2rem 2rem;
   width: 30%;
 }
-.college {
-  margin: 20px 0px;
-}
-.vnit {
-  margin: 20px 0px;
-}
+
 .achieve h1,
 .skills h1 {
   font-size: xx-large;
@@ -273,6 +291,7 @@ form input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   padding-top: 3.5%;
+  padding: 5px;
 }
 #h {
   margin: 1rem;
@@ -317,12 +336,41 @@ form input[type="submit"]:hover {
 #abc {
   margin: 2rem;
 }
-#mn{
+#mn {
   margin-top: 1rem;
 }
 @media screen and (max-width: 900px) {
   body {
     font-size: small;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 13rem;
+    background-color: #302e2e;
+    /* width: 100%; */
+  }
+
+  .nav-links.active {
+    display: flex;
+    border-radius: 1rem;
+    border-width: 5px;
+  }
+
+  .nav-links li {
+    margin: 10px 10px;
+  }
+  .nav-links li :hover{
+    color: #e60073;
+    transform: scale(1.1);
   }
   .firstsection {
     flex-direction: column;
@@ -330,13 +378,19 @@ form input[type="submit"]:hover {
   #mps,
   #vnit {
     flex-direction: column;
+    width: 20.63rem;
   }
   #sarosh {
     flex-direction: column-reverse;
+    width: 20.63rem;
   }
-  #achieve,
-  #skills {
+  .achieve,
+  .skills {
     flex-direction: column;
+    width: 18.54rem;
+  }
+  .connect{
+    width: 20rem;
   }
   .contact_me {
     flex-direction: column;
@@ -346,27 +400,13 @@ form input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
   }
-
-  #menu {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    margin: 2rem 1rem;
-  }
-
-  #menu.open {
-    display: flex;
-  }
-
-  #menu li {
-    text-align: start;
-    margin-bottom: 1rem;
-  }
   #school3,
   .school1 {
     width: 16rem;
+    margin: 3rem;
+  }
+  .firstsection{
+    padding: 5px;
   }
   #school2 {
     margin: 2rem 10rem 2rem 0rem;
@@ -375,14 +415,20 @@ form input[type="submit"]:hover {
   #z {
     margin-left: -8rem;
     max-width: 18rem;
+    padding: 3px;
   }
   #x {
     margin-left: -8rem;
     max-width: 18rem;
+    padding: 3px;
   }
-  #y{
+  #y {
     margin-left: -1rem;
     max-width: 18rem;
+    padding: 3px;
+  }
+  .contact_me{
+    padding: 5px;
   }
   #xyz {
     max-width: 7rem;
