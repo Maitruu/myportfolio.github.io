@@ -28,7 +28,7 @@ body {
 }
 .hamburger {
   display: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .line {
@@ -189,7 +189,7 @@ img:hover {
   margin: 1rem;
   padding-left: 1rem;
 }
-.achieve ul{
+.achieve ul {
   margin: 1rem;
   padding: 1rem;
 }
@@ -275,7 +275,7 @@ form input[type="submit"]:hover {
   padding-top: 3.5%;
 }
 #h {
-  margin: 1.5rem;
+  margin: 1rem;
   width: 4rem;
 }
 #g1,
@@ -314,10 +314,16 @@ form input[type="submit"]:hover {
   background: greenyellow;
   box-shadow: 0 0 50px black;
 }
-#abc{
+#abc {
   margin: 2rem;
 }
+#mn{
+  margin-top: 1rem;
+}
 @media screen and (max-width: 900px) {
+  body {
+    font-size: small;
+  }
   .firstsection {
     flex-direction: column;
   }
@@ -325,7 +331,7 @@ form input[type="submit"]:hover {
   #vnit {
     flex-direction: column;
   }
-  #sarosh{
+  #sarosh {
     flex-direction: column-reverse;
   }
   #achieve,
@@ -347,35 +353,54 @@ form input[type="submit"]:hover {
 
   .hamburger {
     display: block;
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
   }
 
   #menu.open {
-    display:flex; 
+    display: flex;
   }
 
   #menu li {
     text-align: start;
     margin-bottom: 1rem;
   }
-  #school3, .school1{
-    width: 22rem;
+  #school3,
+  .school1 {
+    width: 16rem;
   }
-  #school2{
+  #school2 {
     margin: 2rem 10rem 2rem 0rem;
     display: flex;
-
   }
-  #z{
+  #z {
     margin-left: -8rem;
-    max-width: 20rem;
+    max-width: 18rem;
   }
-  #x{
+  #x {
     margin-left: -8rem;
-    max-width: 20rem;
+    max-width: 18rem;
   }
-  #xyz{
-    max-width: 9rem;
+  #y{
+    margin-left: -1rem;
+    max-width: 18rem;
   }
-  
+  #xyz {
+    max-width: 7rem;
+  }
+  #g1,
+  #g2,
+  #g3,
+  #g4,
+  #g5 {
+    width: 70%;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    display: block;
+    margin: 1rem;
+    padding: 5px;
+    width: 15rem;
+    height: 1.5rem;
+  }
 }
