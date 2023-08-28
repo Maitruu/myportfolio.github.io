@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background-color: #000814;
   color: white;
 }
@@ -378,19 +378,13 @@ form input[type="submit"]:hover {
   #mps,
   #vnit {
     flex-direction: column;
-    width: 20.63rem;
   }
   #sarosh {
     flex-direction: column-reverse;
-    width: 20.63rem;
   }
   .achieve,
   .skills {
     flex-direction: column;
-    width: 18.54rem;
-  }
-  .connect{
-    width: 20rem;
   }
   .contact_me {
     flex-direction: column;
@@ -404,9 +398,6 @@ form input[type="submit"]:hover {
   .school1 {
     width: 16rem;
     margin: 3rem;
-  }
-  .firstsection{
-    padding: 5px;
   }
   #school2 {
     margin: 2rem 10rem 2rem 0rem;
@@ -426,9 +417,6 @@ form input[type="submit"]:hover {
     margin-left: -1rem;
     max-width: 18rem;
     padding: 3px;
-  }
-  .contact_me{
-    padding: 5px;
   }
   #xyz {
     max-width: 7rem;
