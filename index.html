@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/jpg" href="dali.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="portfolio.css"
@@ -18,39 +19,26 @@
   </head>
   <body>
     <header id="myHeader">
-      <nav>
+      <nav id="navbar">
         <div class="first" style="color: white">MAT's PORTFOLIO</div>
-        <div class="second">
-          <ul>
-            <li><a href="#p">Academics</a></li>
+        <div class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="second" id="mySecond">
+          <ul id="menu">
+            <li><a href="#p" class="active">Academics</a></li>
             <li><a href="#q">Achievements</a></li>
             <li><a href="#r">Skills</a></li>
-            <li><a href="">Projects</a></li>
             <li><a href="#s">Contact me</a></li>
-            <li>
-              <img
-                src="https://as1.ftcdn.net/v2/jpg/03/39/05/24/1000_F_339052470_P0TvjTZWKKdPWVFcSgO4nOrH4FcMWHRl.jpg"
-                alt=""
-                height="50px"
-              />
-            </li>
           </ul>
         </div>
+        <img id="logo"
+                src="https://as1.ftcdn.net/v2/jpg/03/39/05/24/1000_F_339052470_P0TvjTZWKKdPWVFcSgO4nOrH4FcMWHRl.jpg"
+                alt=""
+              />
       </nav>
-      <!-- <script>
-        window.onscroll = function () {
-          scroll();
-        };
-
-        function scroll(){
-          if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-            document.getElementById("myHeader").style.top="0";
-          } 
-          else{
-            document.getElementById("myHeader").style.top="-60px";
-          }
-        }
-      </script> -->
     </header>
     <main>
       <section class="firstsection">
@@ -100,7 +88,7 @@
         <div class="school1">
           <h1>Primary Education</h1>
           <p>
-            I was brought up in now called Chhatrapati Sambhajinagar(Aurangabad)
+            I was brought up in now called Chhatrapati Sambhajinagar
             since I was 5 years old. I completed my primary education from
             Maharashtra Public School with an aggregate of 96%.
           </p>
@@ -195,7 +183,7 @@
                 <li>Python - Beginner</li>
                 <li>HTML &#38; CSS - Intermediate</li>
               </ol>
-            </li>
+            </li> 
             <li>
               <span id="name" style="color: #000814"
                 >Subject Matter Expert -
@@ -217,103 +205,14 @@
               </ol>
             </li>
           </ul>
-          <img
-            style="margin: 3rem"
+          <img id="xyz"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnugS4ZTw-xf00r9ppqiLMGg-cHUX0PvJjA&usqp=CAU"
             alt="coder"
-            width="400rem"
-            height="300rem"
           />
-          <div id="container">
-            <div class="box-area">
-              <div id="box-front" class="box">
-                <div class="grid-container bg-front">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-              <div id="box-right" class="box">
-                <div class="grid-container bg-right">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-
-              <div id="box-back" class="box">
-                <div class="grid-container bg-back">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-              <div id="box-left" class="box">
-                <div class="grid-container bg-left">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-              <div id="box-top" class="box">
-                <div class="grid-container bg-top">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-              <div id="box-bottom" class="box">
-                <div class="grid-container bg-bottom">
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                  <div class="grid-item"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr id="s" />
     </main>
     <footer>
       <section class="contact_me">
-        <h1>NEED ANY HELP? ASK IT OUT &rarr;</h1>
+        <h1 id="abc">NEED ANY HELP? ASK IT OUT &rarr;</h1>
 
         <form>
           <label id="name1" for="name">Name:</label>
@@ -354,5 +253,15 @@
         /></a>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  hamburger.addEventListener('click', function() {
+    menu.classList.toggle("open");
+});
+});
+    </script>
   </body>
 </html>
