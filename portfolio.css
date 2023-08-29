@@ -58,7 +58,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:bisque;
 }
 /* nav {
@@ -86,6 +86,7 @@ nav ul li a {
   font-size: 4rem;
   color: white;
   animation: glow 1s ease-in-out infinite alternate;
+  margin: inherit;
 }
 @keyframes glow {
   from {
@@ -122,6 +123,10 @@ a:active {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
+  height: 19rem;
+}
+#i{
+  margin-bottom: 1rem ;
 }
 .name {
   display: flex;
@@ -340,6 +345,9 @@ form input[type="submit"]:hover {
   margin-top: 1rem;
 }
 @media screen and (max-width: 900px) {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-size: small;
   }
@@ -354,9 +362,9 @@ form input[type="submit"]:hover {
     flex-direction: column;
     position: absolute;
     top: 5rem;
-    left: 17rem;
+    left: 13rem;
     background-color: #302e2e;
-    /* width: 100%; */
+    width: 38%;
   }
 
   .nav-links.active {
@@ -370,7 +378,7 @@ form input[type="submit"]:hover {
   }
   .nav-links li :hover{
     color: #e60073;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   .firstsection {
     flex-direction: column;
