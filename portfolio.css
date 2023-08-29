@@ -354,7 +354,7 @@ form input[type="submit"]:hover {
     flex-direction: column;
     position: absolute;
     top: 5rem;
-    left: 13rem;
+    left: 17rem;
     background-color: #302e2e;
     /* width: 100%; */
   }
